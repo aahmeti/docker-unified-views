@@ -11,9 +11,9 @@ cp /backend.jar /unified-views/backend.jar
 
 if [ -f /config/backend-config.properties ] ; then
     echo "using /config/backend-config.properties"
-    java -DconfigFileLocation=/config/backend-config.properties -jar /unified-views/backend.jar 
+    java -Xms1g -Xmx4g -DconfigFileLocation=/config/backend-config.properties -jar /unified-views/backend.jar
 else 
     echo "using /unified-views/config/backend-config.properties"
-    java -DconfigFileLocation=/unified-views/config/backend-config.properties -jar /unified-views/backend.jar 
+    java -Xms1g -Xmx4g -DconfigFileLocation=/unified-views/config/backend-config.properties -jar /unified-views/backend.jar
 fi
 
