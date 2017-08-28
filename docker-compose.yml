@@ -1,9 +1,11 @@
 version: '2'
 services:
- uvadddpus: 
-  image: tenforce/unified-views-add-dpus:feat-compact-modular-3.0-releasebuild
-  links:
-    - uv:frontend
+# uvadddpus: 
+#  image: tenforce/unified-views-add-dpus:feat-compact-modular-3.0
+#  volumes_from:
+#    - uvshared
+#  links:
+#    - uvfrontend:frontend
  uv:
   image: tenforce/unified-views
   ports:
