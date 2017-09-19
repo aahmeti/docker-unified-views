@@ -10,7 +10,7 @@ ENV UNIFIED_VIEWS_VERSION 2.3.1
 RUN mkdir -p /unified-views/lib
 #ADD packages/lib /unified-views/lib
 ADD https://repository.unifiedviews.eu/nexus/content/repositories/releases/eu/unifiedviews/backend-libs/3.0.0/backend-libs-3.0.0.zip /unified-views/lib/backend-libs-3.0.0.zip
-RUN cd /unified-views/backend/lib && unzip backend-libs-3.0.0.zip
+RUN cd /unified-views/lib && unzip backend-libs-3.0.0.zip
 
 RUN mkdir -p /unified-views/dpus/lib
 ADD https://repository.unifiedviews.eu/nexus/content/repositories/releases/eu/unifiedviews/libs-core/3.0.0/libs-core-3.0.0.zip /unified-views/dpus/lib/libs-core-3.0.0.zip
